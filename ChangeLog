@@ -1,0 +1,247 @@
+2026-09-16  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Version 0.1.0
+
+	* .aspell/words.rds: Added
+	* .aspell/defaults.R: Idem
+
+2026-09-14  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Version 0.0.7
+
+2026-09-13  Dirk Eddelbuettel  <edd@debian.org>
+
+	* raw/myman_2026-09-13-06-55.rds: 100 new posts aimed at Vance
+	* raw/myman_2026-09-13-06-55.csv: Idem
+
+	* raw/allposts_2026-09-13-06-59.csv: Updated 1494 row, three-column set
+	* inst/myman/myman.csv: Idem
+	* raw/blocks.R: Updated processor
+
+	* R/myman.R: Updated counts, mention seventh series
+	* man/myman.Rd: Re-rendered
+	* README.md: Updated as well
+	* DESCRIPTION (Description): Idem
+
+2026-09-12  Dirk Eddelbuettel  <edd@debian.org>
+
+	* raw/myman_2026-09-12-17-06.rds: 57 new posts aimed at Vance
+	* raw/myman_2026-09-12-17-06.csv: Idem
+	* raw/fetchPosts.R: Adjusted
+
+	* README.md: Mention PyPI variant
+
+2026-09-09  Dirk Eddelbuettel  <edd@debian.org>
+
+	* .gitignore: Expanded
+	* .Rbuildignore: Idem
+
+2026-09-07  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Version 0.0.6
+
+2026-09-06  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Roll micro release and date
+
+	* raw/myman_2026-09-06-07-18.rds: 200 new posts aimed at Mullin
+	* raw/myman_2026-09-06-07-18.csv: Idem
+
+	* raw/allposts_2026-09-06-07-19.csv: Updated 1394 row, three-column set
+	* inst/myman/myman.csv: Idem
+	* raw/blocks.R: Updated processor
+
+	* R/myman.R: Updated counts, mention sixth series
+	* man/myman.Rd: Re-rendered
+	* README.md: Updated as well
+	* DESCRIPTION (Description): Idem
+
+2026-09-05  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Roll micro release and date, twice
+
+	* raw/myman_2026-09-05-16-22.rds: 187 new posts aimed at Mullin
+	* raw/myman_2026-09-05-16-22.csv: Idem
+	* raw/fetchPosts.R: Adjusted
+
+	* raw/allposts_2026-09-05-16-34.csv: Updated 1381 row, three-column set
+	* inst/myman/myman.csv: Idem
+	* raw/blocks.R: Updated processor
+
+2026-09-01  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Version 0.0.5
+
+	* R/myman.R (myman): Add ability to restrict per target
+	* man/myman.Rd: Re-rendered
+
+	* raw/myman_2026-08-31-18-01.rds: 151 new posts aimed at Bessent
+	* raw/myman_2026-08-31-18-01.csv: Idem
+	* raw/fetchPosts.R: Adjusted
+
+	* raw/allposts_2026-08-31-18-05.csv: Updated three-column set
+	* inst/myman/myman.csv: Idem
+	* raw/blocks.R: Updated processor
+
+	* R/myman.R: Updated counts, mention fifth series
+	* man/myman.Rd: Re-rendered
+	* README.md: Updated as well
+	* DESCRIPTION (Description): Idem
+
+2026-08-28  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Version 0.0.4
+
+	* raw/myman_2026-08-28-15-01.rds: 104 new posts
+	* raw/myman_2026-08-28-15-01.csv: Idem
+	* raw/fetchPosts.R: Adjusted
+
+	* raw/allposts_2026-08-28-15-03.csv: Updated three-column set
+	* inst/myman/myman.csv: Idem
+	* raw/blocks.R: Updated processor
+
+	* R/myman.R: Updated counts, mention fourth series
+	* man/myman.Rd: Re-rendered
+	* README.md: Updated as well
+
+	* DESCRIPTION (Depends): Add R (>= 4.1.0) as |> used
+
+2026-08-25  Dirk Eddelbuettel  <edd@debian.org>
+
+	* R/myman.R (gaussfact): Small tweak to documentation
+	* man/myman.Rd: Regenerated
+
+2026-08-20  Dirk Eddelbuettel  <edd@debian.org>
+
+	* README.md: Updated
+
+2026-08-19  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Version 0.0.3
+
+	* R/myman.R (myman): Return creation date and 'man' as attributes
+	(print.myman): Format also showing date and target 'man'
+	(read.mm): Supplying colClasses as a convenience
+
+	* raw/blocks.R: New processor to record creation date and 'my man'
+	* raw/allposts_2026-08-18-11-21.csv: New tree-column data set
+	* inst/myman/myman.csv: Idem
+
+2026-08-18  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Roll micro version and date
+
+	* R/myman.R: Updated count (now at 916)
+	* man/myman.Rd: Regenerated
+
+	* raw/myman_2026-08-18-08-42.csv: Updated with 79 new ones
+	* raw/myman_2026-08-18-08-42.rds: Idem
+	* inst/myman/myman.csv: Idem
+
+	* raw/fetchPosts.sh: Accommodate third block of posts
+	* raw/append.sh: Idem
+	* raw/blocks.R: Idem
+
+	* raw/*: Deleted redundant csv and rds files included in other,
+	leaving three key source pairs
+
+2026-08-13  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Roll micro version and date
+
+	* R/myman.R: Updated count (now at 837)
+	* man/myman.Rd: Regenerated
+
+	* raw/myman_2026-08-13-05-16.csv: Updated with 39 new ones
+	* raw/myman_2026-08-13-05-16.rds: Idem
+	* inst/myman/myman.csv: Idem
+	* raw/append.sh: One-line helper script to update myman.csv
+
+2026-08-12  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Roll micro version and date
+
+	* README.md: Update total count (now at 698)
+	* R/myman.R: Idem
+	* man/myman.Rd: Regenerated
+
+	* raw/myman_2026-08-12-12-24.csv: Updated with 100 new ones
+	* raw/myman_2026-08-12-12-24.rds: Idem
+	* inst/myman/myman.csv: Idem
+	* raw/append.sh: One-line helper script to update myman.csv
+
+2026-07-30  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Version 0.0.2
+
+	* inst/NEWS.Rd: Added
+
+2026-07-25  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Roll micro version and date
+	* README.md: Update total count (now at 698)
+	* R/myman.R: Idem
+	* man/myman.Rd: Regenerated
+
+	* raw/myman_2026-07-25-13-56.csv: Updated with 53 new ones
+	* raw/myman_2026-07-25-13-56.rds: Idem
+	* inst/myman/myman.csv: Idem
+
+2026-07-24  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Roll micro version and date
+	* README.md: Update total count (now at 645)
+	* R/myman.R: Idem
+	* man/myman.Rd: Regenerated
+
+	* raw/myman_2026-07-24-08-29.csv: Updated with 102 new ones
+	* raw/myman_2026-07-24-08-29.rds: Idem
+	* inst/myman/myman.csv: Idem
+
+2026-07-23  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Roll micro version and date
+	* README.md: Update total count (now at 560)
+	* R/myman.R: Idem; add simple text match lookup
+	* man/myman.Rd: Regenerated
+
+	* raw/myman_2026-07-23-08-44.csv: Updated with 102 new ones
+	* raw/myman_2026-07-23-08-44.rds: Idem
+	* inst/myman/myman.csv: Idem
+	* raw/fetchPosts.R: Filter out (one) '\n' in posts
+
+2026-07-22  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Roll micro version and date
+	* README.md: Update total count (now at 458)
+	* R/myman.R: Small edit to help page
+	* man/myman.Rd: Regenerated
+
+	* raw/myman_2026-07-22-07-22.csv: Updated with 112 new ones
+	* raw/myman_2026-07-22-07-22.rds: Idem
+	* inst/myman/myman.csv: Idem
+
+2026-07-21  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Roll micro version and date
+	* DESCRIPTION (Description): Minor edits
+	* README.md: Update total count (now at 346)
+
+	* raw/myman_2026-07-21-09-24.csv: Updated with sixteen new ones
+	* raw/myman_2026-07-21-09-24.rds: Idem
+	* inst/myman/myman.csv: Idem
+
+	* raw/fetchPosts.R: Posts are now orderd by increasing 'created_at'
+	time; switch timestamp to all-hyphen-no-colon
+	* raw/*: Renamed files
+
+2026-07-19  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION: New package
+	* NAMESPACE: Idem
+	* R/myman.R: Idem
+	* man/myman.Rd: Idem
+	* inst/myman/myman.csv: Idem
+	* raw/*: Idem
+	* README.md: Idem
+
