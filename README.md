@@ -3,6 +3,8 @@
 
 [![CI](https://github.com/eddelbuettel/myman/workflows/ci/badge.svg)](https://github.com/eddelbuettel/myman/actions?query=workflow%3Aci)
 [![License](https://img.shields.io/badge/license-GPL%20%28%3E=%202%29-brightgreen.svg?style=flat)](https://www.r-project.org/Licenses/GPL-2) 
+[![CRAN](https://www.r-pkg.org/badges/version/myman)](https://cran.r-project.org/package=myman) 
+[![Dependencies](https://tinyverse.netlify.app/badge/myman)](https://cran.r-project.org/package=myman)
 [![r-universe](https://eddelbuettel.r-universe.dev/badges/myman)](https://eddelbuettel.r-universe.dev/myman)
 [![Last Commit](https://img.shields.io/github/last-commit/eddelbuettel/myman)](https://github.com/eddelbuettel/myman)
 [![pypi](https://img.shields.io/pypi/v/myman?color=3776ab)](https://pypi.org/project/myman/)
@@ -17,7 +19,9 @@ interim period.) This was followed on August 17, 2026, with another series start
 post][postthree]. A fourth wave started on August 27, 2026, with [this post][postfour].  A fifth
 wave started on August 30, 2026, with [this post][postfive]. A sixth wave started on September 4,
 2026 with [this post][postsix]. A seventh wave started on September 12, 2026, with [this
-post][postseven]. The total now stands at one thousand four hundred ninety four posts.
+post][postseven]. An eighth wave started Septemer 16, 2026, with [this post][posteight].  A ninth 
+wave started October 1, 2026, with [this post][postnine]. A tenth wave started October 9, 2026, with
+[this post][postten]. The total now stands at one thousand nine hundred eighty four posts.
 
 All posts start with "My man ..." and make for excellent input to a `fortunes`-like package. So this
 small package obliges and offers a random draw each time its `myman()` function is called.  The
@@ -26,7 +30,7 @@ posts. Neither package is required to run this package to display random selecti
 
 ### Example
 
-```{r}
+```r
 > library(myman)                       # load the package
 > example(myman)
 
@@ -57,9 +61,15 @@ Complete and functional, no dependencies, passes checks.
 
 ### Installation
 
-The package is at this point only on GitHub so one can rely on the `remotes` package to do
+The package is on CRAN so the standard installation via
 
-```{r}
+```r
+> install.packages("myman")
+```
+
+will work.  It can also be installed from GitHub using the `remotes` package via the command
+
+```r
 > remotes::install_github("eddelbuettel/myman")
 ```
 
@@ -82,9 +92,12 @@ Dirk Eddelbuettel
 GPL (>= 2)
 
 [postone]: https://bsky.app/profile/did:plc:cnpe7qvcyjrhm6w7w7e4atur/post/3mqum4mxsuk2g
-[posttwo]: https://bsky.app/profile/kevinmkruse.bsky.social/post/3mstvbjpagca2
+[posttwo]: https://bsky.app/profile/kevinmkruse.bsky.social/post/3mstvbjpagc2a
 [postthree]: https://bsky.app/profile/kevinmkruse.bsky.social/post/3mtcpiw7gi22j
 [postfour]: https://bsky.app/profile/kevinmkruse.bsky.social/post/3mu3pugs2yk2f
 [postfive]: https://bsky.app/profile/kevinmkruse.bsky.social/post/3mudbzy5ksk25
 [postsix]: https://bsky.app/profile/kevinmkruse.bsky.social/post/3muparqtdkk2w
 [postseven]: https://bsky.app/profile/kevinmkruse.bsky.social/post/3mvdol6xu5k2s
+[posteight]: https://bsky.app/profile/kevinmkruse.bsky.social/post/3mvnmq23nw22y
+[postnine]: https://bsky.app/profile/kevinmkruse.bsky.social/post/3mwtx2jztkk2g
+[postten]: https://bsky.app/profile/kevinmkruse.bsky.social/post/3mx333hlmdc2o

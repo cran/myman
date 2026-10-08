@@ -1,9 +1,119 @@
-2026-09-16  Dirk Eddelbuettel  <edd@debian.org>
+2026-10-08  Dirk Eddelbuettel  <edd@debian.org>
 
-	* DESCRIPTION (Version, Date): Version 0.1.0
+	* DESCRIPTION (Version, Date): Version 0.10.0
+
+2026-10-07  Dirk Eddelbuettel  <edd@debian.org>
+
+	* raw/allposts_2026-10-07-08-30.csv: Updated 1984 row, three-column set
+	* inst/myman/myman.csv: Idem
+	* raw/blocks.R: Updated processor
+
+	* raw/myman_2026-10-07-08-20.csv: 190 new posts aimed at Musk
+	* raw/myman_2026-10-07-08-20.rds: Idem
+
+	* R/myman.R (men): Add helper function tabulating target men
+	* man/myman.Rd: Add documentation
+	* NAMESPACE: Updated
+
+2026-10-06  Dirk Eddelbuettel  <edd@debian.org>
+
+	* raw/allposts_2026-10-06-13-35.csv: Updated 1954 row, three-column set
+	* inst/myman/myman.csv: Idem
+	* raw/blocks.R: Updated processor
+
+	* raw/myman_2026-10-06-13-31.csv: 160 new posts aimed at Musk
+	* raw/myman_2026-10-06-13-31.rds: Idem
+
+	* raw/fetchPosts.R: Find most recent file to compare most recent post
+	* raw/blocks.R: Generalize using parameters
+
+	* README.md: Correct 'wave two' URL to the one in R and Rd file
+
+	* R/myman.R (posts): Add helper function to return data.frame of posts
+	* man/myman.Rd: Add documentation
+	* NAMESPACE: Updated
+
+2026-10-05  Dirk Eddelbuettel  <edd@debian.org>
+
+	* raw/allposts_2026-10-05-20-03.csv: Updated 1916 row, three-column set
+	* inst/myman/myman.csv: Idem
+	* raw/blocks.R: Updated processor
+
+	* raw/myman_2026-10-05-20-02.csv: 122 new posts aimed at Musk
+	* raw/myman_2026-10-05-20-02.rds: Idem
+	* raw/fetchPosts.R: Adjusted
+
+2026-10-04  Dirk Eddelbuettel  <edd@debian.org>
+
+	* README.md: Mention tenth wave
+	* DESCRIPTION: Idem
+
+2026-10-03  Dirk Eddelbuettel  <edd@debian.org>
+
+	* raw/allposts_2026-10-03-06-36.csv: Updated 1694 row, three-column set
+	* inst/myman/myman.csv: Idem
+	* raw/blocks.R: Updated processor
+
+	* raw/myman_2026-10-03-06-24.rds: 100 new posts aimed at Luckey
+	* raw/myman_2026-10-03-06-24.csv: Idem
+	* raw/fetchPosts.R: Adjusted
+
+	* R/myman.R: Updated counts, mention ninth series
+	* man/myman.Rd: Re-rendered
+
+	* README.md: Updated counts, mention ninth wave
+	* DESCRIPTION: Mention ninth wave
+
+2026-09-27  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Version 0.1.0 is now on CRAN, initial
+	upload was made after 0.0.7 so the initial upload misses 0.0.8 changes
+
+	* README.md: Add CRAN and dependency badges
 
 	* .aspell/words.rds: Added
 	* .aspell/defaults.R: Idem
+
+2026-09-18  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Version 0.0.8
+
+	* R/myman.R (myman): Support optional argument 'posts' to select
+	number of samples, can be used with 'target' as well
+	* man/myman.Rd: Documented
+
+2026-09-17  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Roll micro release and date
+
+	* raw/myman_2026-09-17-10-34.rds: 200 new posts aimed at Hegseth
+	* raw/myman_2026-09-17-10-34.csv: Idem
+	* raw/fetchPosts.R: Adjusted
+
+	* raw/allposts_2026-09-17-10-38.csv: Updated 1694 row, three-column set
+	* inst/myman/myman.csv: Idem
+	* raw/blocks.R: Updated processor
+
+	* R/myman.R: Updated counts, mention eighth series
+	* man/myman.Rd: Re-rendered
+	* README.md: Updated as well
+
+2026-09-16  Dirk Eddelbuettel  <edd@debian.org>
+
+	* DESCRIPTION (Version, Date): Roll micro release and date
+
+	* raw/myman_2026-09-16-13-17.rds: 100 new posts aimed at Hegseth
+	* raw/myman_2026-09-16-13-17.csv: Idem
+	* raw/fetchPosts.R: Adjusted
+
+	* raw/allposts_2026-09-16-13-23.csv: Updated 1594 row, three-column set
+	* inst/myman/myman.csv: Idem
+	* raw/blocks.R: Updated processor
+
+	* R/myman.R: Updated counts, mention eighth series
+	* man/myman.Rd: Re-rendered
+	* README.md: Updated as well
+	* DESCRIPTION (Description): Idem
 
 2026-09-14  Dirk Eddelbuettel  <edd@debian.org>
 

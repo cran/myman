@@ -1,6 +1,8 @@
 # tinyrox says don't edit this manually, but it can't stop you!
 
+export(men)
 export(myman)
+export(posts)
 
 S3method(print,myman)
 

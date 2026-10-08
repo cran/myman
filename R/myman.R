@@ -10,22 +10,28 @@ read.mm <- function() {
 ##' @title Display a Random 'my man' Skeet by Kevin Kruse
 ##'
 ##' @description This function displays a randomly chosen line from the included
-##' data set of one thousand four hundred and ninety four 'my man' skeets
+##' data set of one thousand nine hundred and eighty four 'my man' skeets
 ##' by Kevin Kruse posted on Bluesky starting in July 2026 in replies to the initial post
 ##' \url{https://bsky.app/profile/did:plc:cnpe7qvcyjrhm6w7w7e4atur/post/3mqum4mxsuk2g},
-##' and in August 2026 starting with
+##' in August 2026 starting with
 ##' \url{https://bsky.app/profile/kevinmkruse.bsky.social/post/3mstvbjpagc2a} as well as
-##' starting with
-##' \url{https://bsky.app/profile/kevinmkruse.bsky.social/post/3mtcpiw7gi22j}, again
-##' starting with \url{https://bsky.app/profile/kevinmkruse.bsky.social/post/3mu3pugs2yk2f}, and
-##' again starting with \url{https://bsky.app/profile/kevinmkruse.bsky.social/post/3mudbzy5ksk25} as
-##' well as with \url{https://bsky.app/profile/kevinmkruse.bsky.social/post/3muparqtdkk2w} and
-##' \url{https://bsky.app/profile/kevinmkruse.bsky.social/post/3mvdol6xu5k2s}.
+##' further series starting with, respectively,
+##' \url{https://bsky.app/profile/kevinmkruse.bsky.social/post/3mtcpiw7gi22j},
+##' \url{https://bsky.app/profile/kevinmkruse.bsky.social/post/3mu3pugs2yk2f},
+##' \url{https://bsky.app/profile/kevinmkruse.bsky.social/post/3mudbzy5ksk25},
+##' \url{https://bsky.app/profile/kevinmkruse.bsky.social/post/3muparqtdkk2w},
+##' \url{https://bsky.app/profile/kevinmkruse.bsky.social/post/3mvdol6xu5k2s},
+##' \url{https://bsky.app/profile/kevinmkruse.bsky.social/post/3mvnmq23nw22y} and
+##' \url{https://bsky.app/profile/kevinmkruse.bsky.social/post/3mwtx2jztkk2g}.
+##'
+##' \code{posts} is a convenience function that returns the underlying data
+##' as a data.frame
 ##'
 ##' @param ind Optional index of a quote, or character expression to be matched;
 ##' if missing a random index value is sampled
 ##' @param target Optional character value to describe target of posts, can be a part of the name
 ##' as regular expression matching is used
+##' @param posts Optional count for number of posts to sample, defaults to one
 ##' @return A character vector containing one randomly selected line from the included file.
 ##' It is of class \code{myman} for which an S3 print method will be invoked.
 ##' @author Dirk Eddelbuettel
@@ -34,7 +40,7 @@ read.mm <- function() {
 ##' myman(target="Miller")    # random draw against first target
 ##' myman("maitre")           # all posts mentioning a "maitre'd"
 ##' @export
-myman <- function(ind, target) {
+myman <- function(ind, target, posts=1) {
     if (is.null(mm.env$mm.data)) mm.env$mm.data <- read.mm()
     mm.data <- mm.env$mm.data
 
@@ -47,7 +53,7 @@ myman <- function(ind, target) {
 
     if (missing(ind)) {
         n <- nrow(mm.data)
-        ind <- sample(1:n, 1)
+        ind <- sample(1:n, posts)
     } else if (is.character(ind)) {
         ind <- grep(ind, mm.data[,"post"])
     }
@@ -73,6 +79,22 @@ print.myman <- function(x, width = NULL, ...) {
            m = as.character(attr(x, "man")),
            d = format(as.Date(attr(x, "created"))))
 }
+
+##' @rdname myman
+##' @return The data.frame of times, posts, and men addressed
+##' @export
+posts <- function() {
+    if (is.null(mm.env$mm.data)) mm.env$mm.data <- read.mm()
+    mm.env$mm.data
+}
+
+##' @rdname myman
+##' @return A tabulation of the targets of all posts
+##' @export
+men <- function() {
+    table(posts()$man)
+}
+
 
 ##' @importFrom utils read.csv
 NULL
