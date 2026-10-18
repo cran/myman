@@ -1,8 +1,8 @@
-eba591bbe016440f326212a7a621898c *ChangeLog
-edba92db63c399d9911bac688838a818 *DESCRIPTION
+7a752fe7ab67c811822bda3991f691af *ChangeLog
+5e0583e914ca08f55a9f761b8e6f83a3 *DESCRIPTION
 cc38bb867bd72201eb0b7ea855c747be *NAMESPACE
-550ce0e2ae79593febb4c359154edac3 *R/myman.R
-b7f5b03eceb5d36a39c7d05eccdcc246 *README.md
-bcdb0fc0f968665e254de4f36f45571d *inst/NEWS.Rd
-dbc4ea4242acb20d51df1c48182ed1d5 *inst/myman/myman.csv
-54dc3836424241e74343d063c8706093 *man/myman.Rd
+8e691bbb4cfcefeb04f704c7005742d3 *R/myman.R
+02512946ba47b9ab722f5c3987382f5b *README.md
+c5dc5c3ca5738a89cfbfa2f6d1ca36d6 *inst/NEWS.Rd
+1ae49502320d2fc372ebd28b9084ceec *inst/myman/myman.csv
+68126860c7926acafb8317a1910e7178 *man/myman.Rd

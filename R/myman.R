@@ -4,13 +4,16 @@ mm.env <- new.env()
 read.mm <- function() {
     filename <- system.file("myman", "myman.csv", package="myman")
     if (!file.exists(filename)) stop("Hm, file", filename, "is missing.", call. = FALSE)
-    data <- read.csv(filename, colClasses=c("character", "POSIXct", "factor"))
+    data <- read.csv(filename, colClasses=c("character", "POSIXct", "character"))
+    ## cannot read as an 'ordered' type but can convert after reading
+    data$man <- factor(data$man, levels=unique(data$man), ordered=TRUE)
+    data
 }
 
 ##' @title Display a Random 'my man' Skeet by Kevin Kruse
 ##'
 ##' @description This function displays a randomly chosen line from the included
-##' data set of one thousand nine hundred and eighty four 'my man' skeets
+##' data set of two thousand one hundred and eighty four 'my man' skeets
 ##' by Kevin Kruse posted on Bluesky starting in July 2026 in replies to the initial post
 ##' \url{https://bsky.app/profile/did:plc:cnpe7qvcyjrhm6w7w7e4atur/post/3mqum4mxsuk2g},
 ##' in August 2026 starting with
@@ -21,8 +24,11 @@ read.mm <- function() {
 ##' \url{https://bsky.app/profile/kevinmkruse.bsky.social/post/3mudbzy5ksk25},
 ##' \url{https://bsky.app/profile/kevinmkruse.bsky.social/post/3muparqtdkk2w},
 ##' \url{https://bsky.app/profile/kevinmkruse.bsky.social/post/3mvdol6xu5k2s},
-##' \url{https://bsky.app/profile/kevinmkruse.bsky.social/post/3mvnmq23nw22y} and
-##' \url{https://bsky.app/profile/kevinmkruse.bsky.social/post/3mwtx2jztkk2g}.
+##' \url{https://bsky.app/profile/kevinmkruse.bsky.social/post/3mvnmq23nw22y},
+##' \url{https://bsky.app/profile/kevinmkruse.bsky.social/post/3mwtx2jztkk2g},
+##' \url{https://bsky.app/profile/kevinmkruse.bsky.social/post/3mx333hlmdc2o},
+##' \url{https://bsky.app/profile/kevinmkruse.bsky.social/post/3mxgzqblov22r},
+##' \url{https://bsky.app/profile/leftistwonk.bsky.social/post/3mxsfblcuh22d}.
 ##'
 ##' \code{posts} is a convenience function that returns the underlying data
 ##' as a data.frame
